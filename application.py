@@ -8,11 +8,11 @@ from sklearn.preprocessing import StandardScaler
 
 ## Below command will install all the libraries from below file:
 ## pip install -r requirements.txt
-
+ 
 # For running the 'app.py' file in terminal use command 'python app.py'
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app = application
 
 # Ridge Regressor Model and StandardScaler Pickle
 ridge_model = pickle.load(open('models/ridge.pkl','rb'))
